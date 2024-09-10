@@ -1,0 +1,149 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Main Sections */
+main {
+    padding: 2rem 0;
+}
+
+/* General Section Styles */
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+/* Contact and Certifications */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+/* Skills and Tools Sections */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tile {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1;
+    min-width: calc(33.333% - 1rem);
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Work Experience Section */
+.job {
+    margin-bottom: 2rem;
+}
+
+.job h3 {
+    margin-bottom: 0.5rem;
+}
+
+.job ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+/* Education and Achievements */
+.education ul,
+.achievements ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .tile {
+        min-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .tile {
+        min-width: calc(100% - 1rem);
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .job ul {
+        padding-left: 1rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+}
